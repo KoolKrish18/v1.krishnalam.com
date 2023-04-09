@@ -15,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="images/KN-logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -38,9 +40,15 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>BLAH BALH LABALA BALA ALKAUSWGIUDGIWUDGH DWKASHUIWHDUISHNAKJ WUIHEUIDHWIUH DIWUHIUHD
-                        IWHIEHEDHWUIWHUIDH DWUIDHI UDWHUI EHDUIWDGUIGD GDWSYUGDWUYGDBDUYWGD
-                        YUDBWYUDGYUDWGDYUWGDWDBDYWUGDWUY GDWYUGD YUW DGWYU </p>
+                    <p>Promising and enthusiastic Internship student learning from leading experts through comprehensive
+                        programs. Brings
+                        excellent communications, strong analytical problem-solving abilities and critical thinking
+                        skills to multitask and
+                        thrive in fast-paced environments. Focused on contributing to operations and projects while
+                        developing important skills
+                        and foundational career knowledge. Passionate and Ambitious of the sciences and math, exploring
+                        any areas of interest.
+                        Quick learner with good computer abilities.</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -113,7 +121,7 @@
                 <div class="layer">
                     <h3>Social Media App</h3>
                     <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -121,7 +129,7 @@
                 <div class="layer">
                     <h3>Music Media App</h3>
                     <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -129,13 +137,34 @@
                 <div class="layer">
                     <h3>Online Shopping App</h3>
                     <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"></a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+    <!------------------contact--------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>contact@example.com</p>
+                    <p>73737373733</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    form
                 </div>
             </div>
         </div>
     </div>
-
-
 
     <script>
 
@@ -150,6 +179,19 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
 
     </script>
