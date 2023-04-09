@@ -17,15 +17,15 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/Background.png);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #080808), url(images/Background.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 0px 0%;
 }
 
 nav {
@@ -33,11 +33,14 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    background: #080808;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
 }
 
 .logo {
     width: 140px;
+    margin-left: 5%;
+    margin-top: 0.4%;
 }
 
 nav ul li {
@@ -69,13 +72,14 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 17.5%;
+    font-size: 60px;
+    margin-left: 16.5%;
 }
 
 .header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 80px;
+    margin-top: 5px;
 }
 
 .header-text h1 span {
