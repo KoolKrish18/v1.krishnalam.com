@@ -12,7 +12,7 @@
 
 <body>
     <div id="header">
-        <div class="container">
+        <div class="home">
             <nav>
                 <img src="images/Logo.png" class="logo">
                 <ul id="sidemenu">
@@ -26,8 +26,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Hi, I'm</p>
-                <h1><span>Krish Nalam</span></h1>
+                <p id="txt"></p>
             </div>
         </div>
     </div>
@@ -40,15 +39,17 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Promising and enthusiastic Internship student learning from leading experts through comprehensive
-                        programs. Brings
-                        excellent communications, strong analytical problem-solving abilities and critical thinking
-                        skills to multitask and
-                        thrive in fast-paced environments. Focused on contributing to operations and projects while
-                        developing important skills
-                        and foundational career knowledge. Passionate and Ambitious of the sciences and math, exploring
-                        any areas of interest.
-                        Quick learner with good computer abilities.</p>
+                    <p class="field">Hi, my name is Krish Nalam and I am a grade 11 student with a passion for coding
+                        and technology.
+                        I have always been interested in how computers work and love the challenge of solving complex
+                        problems through programming. Over the past few years I have both recieved external training, as
+                        well as taught my self several programming languages, including Python, Java and C#. I have also
+                        used these languages to create games and worked on many projects. My dream is to pursue a career
+                        in computer science, and I am currently working on developing my skills in web development and
+                        mobile app development using html, css and Javascript. I am also an active member of my school's
+                        coding club and have participated in coding competitions, where I have gained valuable
+                        experience.
+                    </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -114,35 +115,36 @@
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpeg">
+                    <div class="layer">
+                        <h3>Music Media App</h3>
+                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work1.jpg">
-                <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work2.jpeg">
-                <div class="layer">
-                    <h3>Music Media App</h3>
-                    <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work3.jpg">
-                <div class="layer">
-                    <h3>Online Shopping App</h3>
-                    <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#" class="btn">See More</a>
     </div>
+
     <!------------------contact--------------------->
     <div id="contact">
         <div class="container">
@@ -193,6 +195,35 @@
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
+
+
+        const output = document.getElementById('txt');
+        let i = 0;
+        let currentPara = 0;
+        const x = `Hi, I\'m <nl>
+Krish Nalam`;
+
+        const splitted = x.split('<nl>');
+
+        splitted.forEach(function () {
+            const p = document.createElement('p');
+            output.appendChild(p);
+        });
+        const paras = output.querySelectorAll('p');
+
+        const intervalId = setInterval(function () {
+            paras[currentPara].innerHTML += splitted[currentPara][i];
+            i++;
+
+            if (i === splitted[currentPara].length) {
+                currentPara++;
+                i = 0;
+                if (currentPara === splitted.length) {
+                    clearInterval(intervalId);
+                }
+            }
+        }, 50)
+
 
     </script>
 

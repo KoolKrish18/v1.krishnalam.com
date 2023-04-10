@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    padding: 0px 0%;
+    padding: 10px 10%;
 }
 
 nav {
@@ -77,14 +77,12 @@ nav ul li a:hover::after {
     margin-left: 16.5%;
 }
 
-.header-text h1 {
+.header-text p span {
     font-size: 80px;
     margin-top: 5px;
-}
-
-.header-text h1 span {
     color: #ff004f;
 }
+
 
 /*--------------about----------------*/
 #about {
@@ -117,14 +115,20 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
+.field {
+    font-size: 20px;
+    max-width: 90%;
+}
+
 .tab-titles {
     display: flex;
     margin: 20px 0 40px;
+    margin-bottom: 2.5%;
 }
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -152,7 +156,7 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: #b54769;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents {
