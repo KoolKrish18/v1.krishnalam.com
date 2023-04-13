@@ -8,6 +8,7 @@
     <title>Personal Portfolio - Krish Nalam</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/b10997c53e.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -64,10 +65,18 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Public Speaking Club President</span><br>Founder - Runs weekly meetings encourging
+                            <li><span>Public Speaking Club</span><br>Founder and President - Runs weekly meetings
+                                encourging
                                 members to improve speaking skills</li>
-                            <li><span>Web Dev</span><br>Designer Web/App Intercaed</li>
-                            <li><span>Game Dev</span><br>Designer Intercaed</li>
+                            <li><span>DRPS Youth in Policing</span><br>Co-op Student - Admisinstrated the Coldest Night
+                                of the Year
+                                initiative breaking the record of money raised</li>
+                            <li><span>Starts With One</span><br>Finance Associate - Worked under finance director to
+                                oversee a non-profit organization’s finances</li>
+                            <li><span>STEM·E</span><br>Intern - 3 month internship involving roles programmer, graphic
+                                designer, and discord moderator</li>
+                            <li><span>Whitby Youth Council</span><br>Member - Improved networking skills while gaining
+                                leadership experience and impacting community projects</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -90,23 +99,23 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
                     <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
                         wegfcuywefbuywevfb uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI Design</h2>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
                     <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
                         wegfcuywefbuywevfb
                         uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/KoolKrish18/ICS3U1">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Web fuiweg</h2>
+                    <h2>C#</h2>
                     <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
                         wegfcuywefbuywevfb
                         uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
@@ -137,7 +146,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work3.jpg">
+                    <img src="images/Chess.jpg">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
                         <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
@@ -171,65 +180,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-
-    <script>
-
-        var sidemenu = document.getElementById("sidemenu")
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-
-
-        const output = document.getElementById('txt');
-        let i = 0;
-        let currentPara = 0;
-        const x = `Hi, I\'m <nl>
-Krish Nalam`;
-
-        const splitted = x.split('<nl>');
-
-        splitted.forEach(function () {
-            const p = document.createElement('p');
-            output.appendChild(p);
-        });
-        const paras = output.querySelectorAll('p');
-
-        const intervalId = setInterval(function () {
-            paras[currentPara].innerHTML += splitted[currentPara][i];
-            i++;
-
-            if (i === splitted[currentPara].length) {
-                currentPara++;
-                i = 0;
-                if (currentPara === splitted.length) {
-                    clearInterval(intervalId);
-                }
-            }
-        }, 50)
-
-
-    </script>
 
 </body>
 
