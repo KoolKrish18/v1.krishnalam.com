@@ -60,7 +60,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #9499ff;
+    background: #e46f80;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -80,7 +80,7 @@ nav ul li a:hover::after {
 .header-text p span {
     font-size: 80px;
     margin-top: 5px;
-    color: #9499ff;
+    color: #e46f80;
 }
 
 
@@ -140,7 +140,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #9499ff;
+    background: #e46f80;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -158,7 +158,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #393485;
+    color: #e9cad0;
     font-size: 20px;
 }
 
@@ -211,7 +211,7 @@ nav ul li a:hover::after {
 }
 
 .services-list div:hover {
-    background: #9499ff;
+    background: #e46f80;
     transform: translateY(-10px);
 }
 
@@ -244,7 +244,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #9499ff);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #e46f80);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -267,7 +267,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: #9499ff;
+    color: #e46f80;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -290,7 +290,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #9499ff;
+    border: 1px solid #e46f80;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -299,7 +299,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #9499ff;
+    background: #e46f80;
 }
 
 /*--------------------css for small screen ------------*/
@@ -329,7 +329,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #9499ff;
+        background: #e46f80;
         position: fixed;
         top: 0;
         right: -200px;
