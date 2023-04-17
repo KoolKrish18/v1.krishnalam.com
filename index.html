@@ -12,178 +12,175 @@
 </head>
 
 <body>
-    <div id="header">
+    <div class="bar">
+        <nav>
+            <img src="images/KN-logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+
+
+    <div class="whole">
         <div class="home">
-            <nav>
-                <img src="images/Logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Skills</a></li>
-                    <li><a href="#portfolio">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
             <div class="header-text">
                 <p id="txt"></p>
             </div>
         </div>
-    </div>
-    <!--------------about---------------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/About.JPG">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">Me, Myself & I</h1>
-                    <p class="field">Hi, my name is Krish Nalam and I am a grade 11 student with a passion for coding
-                        and technology.
-                        I have always been interested in how computers work and love the challenge of solving complex
-                        problems through programming. Over the past few years I have both recieved external training, as
-                        well as taught my self several programming languages, including Python, Java and C#. I have also
-                        used these languages to create games and worked on many projects. My dream is to pursue a career
-                        in computer science, and I am currently working on developing my skills in web development and
-                        mobile app development using html, css and Javascript. I am also an active member of my school's
-                        coding club and have participated in coding competitions, where I have gained valuable
-                        experience.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
-                        <p class="tab-links" onclick="opentab('experience')">Achievements</p>
-                        <p class="tab-links" onclick="opentab('education')">Ambitions</p>
+        <!--------------about---------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/About.JPG">
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Public Speaking Club</span><br>Founder and President - Runs weekly meetings
-                                encourging
-                                members to improve speaking skills</li>
-                            <li><span>DRPS Youth in Policing</span><br>Co-op Student - Admisinstrated the Coldest Night
-                                of the Year
-                                initiative breaking the record of money raised</li>
-                            <li><span>Starts With One</span><br>Finance Associate - Worked under finance director to
-                                oversee a non-profit organization’s finances</li>
-                            <li><span>STEM·E</span><br>Intern - 3 month internship involving roles programmer, graphic
-                                designer, and discord moderator</li>
-                            <li><span>Whitby Youth Council</span><br>Member - Improved networking skills while gaining
-                                leadership experience and impacting community projects</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Waterloo CCC Contest</span><br>Distinction - Ranked Top 25% of all contestants
-                            </li>
-                            <li><span>FC Skills: Microsoft Accelerator</span><br>Earned a professional badge in using
-                                Microsoft Applications</li>
-                            <li><span>Communications Training: Toastmasters International</span><br>Recieved training to
-                                improve public speaking, feedback, and leadership skills</li>
-                            <li><span>AutoCad Assesment</span><br>Earned a professional badge at the top 5% of 2.9M
-                                participants</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Post-Secondary</span><br>Graduate with Bachelor of Mathematics in Computer
-                                Science; Waterloo Unviersity Co-op Program</li>
-                            <li><span>Post-Graduate</span><br>Masters in Data Science and Artificial Engineering;
-                                Waterloo University Co-op Program</li>
-                            <li><span>Career Path</span><br>Interested in occupations involving Artificial Intelligence
-                                and Machine Learning</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--------------services-------------------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Python</h2>
-                    <p>Python </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-java"></i>
-                    <h2>Java</h2>
-                    <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
-                        wegfcuywefbuywevfb
-                        uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
-                    <a href="https://github.com/KoolKrish18/ICS3U1">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>C#</h2>
-                    <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
-                        wegfcuywefbuywevfb
-                        uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------------------portfolio--------------------------------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work1.jpg">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.jpeg">
-                    <div class="layer">
-                        <h3>Music Media App</h3>
-                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/Chess.jpg">
-                    <div class="layer">
-                        <h3>Online Shopping App</h3>
-                        <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Me, Myself & I</h1>
+                        <p class="field">Hi, my name is Krish Nalam and I am a grade 11 student with a passion for
+                            coding
+                            and technology.
+                            I have always been interested in how computers work and love the challenge of solving
+                            complex
+                            problems through programming. Over the past few years I have both recieved external
+                            training, as
+                            well as taught my self several programming languages, including Python, Java and C#. I have
+                            also
+                            used these languages to create games and worked on many projects. My dream is to pursue a
+                            career
+                            in computer science, and I am currently working on developing my skills in web development
+                            and
+                            mobile app development using html, css and Javascript. I am also an active member of my
+                            school's
+                            coding club and have participated in coding competitions, where I have gained valuable
+                            experience.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
+                            <p class="tab-links" onclick="opentab('experience')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('education')">Ambitions</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Public Speaking Club</span><br>Founder and President - Runs weekly meetings
+                                    encourging
+                                    members to improve speaking skills</li>
+                                <li><span>DRPS Youth in Policing</span><br>Co-op Student - Admisinstrated the Coldest
+                                    Night
+                                    of the Year
+                                    initiative breaking the record of money raised</li>
+                                <li><span>Starts With One</span><br>Finance Associate - Worked under finance director to
+                                    oversee a non-profit organization’s finances</li>
+                                <li><span>STEM·E</span><br>Intern - 3 month internship involving roles programmer,
+                                    graphic
+                                    designer, and discord moderator</li>
+                                <li><span>Whitby Youth Council</span><br>Member - Improved networking skills while
+                                    gaining
+                                    leadership experience and impacting community projects</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Waterloo CCC Contest</span><br>Distinction - Ranked Top 25% of all contestants
+                                </li>
+                                <li><span>FC Skills: Microsoft Accelerator</span><br>Earned a professional badge in
+                                    using
+                                    Microsoft Applications</li>
+                                <li><span>Communications Training: Toastmasters International</span><br>Recieved
+                                    training to
+                                    improve public speaking, feedback, and leadership skills</li>
+                                <li><span>AutoCad Assesment</span><br>Earned a professional badge at the top 5% of 2.9M
+                                    participants</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Post-Secondary</span><br>Graduate with Bachelor of Mathematics in Computer
+                                    Science; Waterloo Unviersity Co-op Program</li>
+                                <li><span>Post-Graduate</span><br>Masters in Data Science and Artificial Engineering;
+                                    Waterloo University Co-op Program</li>
+                                <li><span>Career Path</span><br>Interested in occupations involving Artificial
+                                    Intelligence
+                                    and Machine Learning</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <!--------------services-------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python</h2>
+                        <p>Python </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Java</h2>
+                        <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
+                            wegfcuywefbuywevfb
+                            uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
+                        <a href="https://github.com/KoolKrish18/ICS3U1" target="_blank">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>C#</h2>
+                        <p>dughifudweg fuiwegfyuwe gduyhweiufhw eiofhweuih dfiuwgdh wiu dghe uiwef weyufgewuybfwiudhiu
+                            wegfcuywefbuywevfb
+                            uywefvbwefgfuyweg ewuihewfiu ew we uherw</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------portfolio--------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work1.jpg">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work2.jpeg">
+                        <div class="layer">
+                            <h3>Music Media App</h3>
+                            <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Chess.jpg">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>duihgewiufhweuihf eudhew ewudewhe duewhd hd eiwehe8w ewhduew ebe</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
     </div>
 
-    <!------------------contact--------------------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p>contact@example.com</p>
-                    <p>73737373733</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <!------------------contact side bar--------------------->
 
-                    </div>
-                </div>
-                <div class="contact-right">
-                    form
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 

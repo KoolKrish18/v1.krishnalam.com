@@ -7,44 +7,60 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100vh !important;
+    width: 100vw !important;
 }
 
 body {
     background: #080808;
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 100vh !important;
+    width: 100vw !important;
 }
 
-#header {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0), #080808), url(images/Background.JPG);
+.home {
+    background: linear-gradient(to left, rgba(228, 111, 128, 0), #080808), url(images/Background.JPG);
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    min-height: 100%;
 }
 
 .container {
     padding: 10px 10%;
 }
 
-nav {
+.bar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: #080808;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75);
+    flex-direction: row;
+    width: 10vw;
+    height: 100vh;
+    background-color: #262626;
+    box-shadow: 0 4px 8px 0 rgba(228, 111, 128, 0.75);
+    overflow: hidden;
 }
 
+.whole {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+
+
 .logo {
-    width: 140px;
+    width: 160px;
+    height: 160px;
     margin-left: 5%;
     margin-top: 0.4%;
 }
 
 nav ul li {
-    display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
@@ -52,7 +68,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 26px;
     position: relative;
 }
 
@@ -60,7 +76,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #e46f80;
+    background: #080808;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -72,7 +88,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 17.5%;
+    padding-top: 17.5%;
     font-size: 60px;
     margin-left: 16.5%;
 }
@@ -244,7 +260,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #e46f80);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), #e46f80);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -263,6 +279,7 @@ nav ul li a:hover::after {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: #080808;
 }
 
 .layer a {
@@ -301,6 +318,8 @@ nav ul li a:hover::after {
 .btn:hover {
     background: #e46f80;
 }
+
+
 
 /*--------------------css for small screen ------------*/
 nav .fa-solid {
