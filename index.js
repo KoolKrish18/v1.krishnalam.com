@@ -37,7 +37,6 @@ const paras = output.querySelectorAll('p');
 const intervalId = setInterval(function () {
   paras[currentPara].innerHTML += splitted[currentPara][i];
   i++;
-
   if (i === splitted[currentPara].length) {
     currentPara++;
     i = 0;

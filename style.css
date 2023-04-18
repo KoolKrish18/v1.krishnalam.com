@@ -39,8 +39,8 @@ body {
     width: 10vw;
     height: 100vh;
     background-color: #262626;
-    box-shadow: 0 4px 8px 0 rgba(228, 111, 128, 0.75);
     overflow: hidden;
+    min-width: 190px;
 }
 
 .whole {
@@ -54,15 +54,15 @@ body {
 
 
 .logo {
-    width: 160px;
-    height: 160px;
-    margin-left: 5%;
-    margin-top: 0.4%;
+    width: 190px;
+    height: 190px;
+    box-shadow: 0px 10px 10px #080808;
 }
 
 nav ul li {
     list-style: none;
-    margin: 10px 20px;
+    margin-left: 35%;
+    margin-top: 40%;
 }
 
 nav ul li a {
@@ -72,31 +72,50 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::after {
+nav span li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #080808;
+    background: #e46f80;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-nav ul li a:hover::after {
+nav span ul li a:hover::after {
     width: 100%;
 }
 
+#icons {
+    padding-top: 50%;
+}
+
+#icons li {
+    list-style: none;
+    margin-top: 15%;
+    margin-left: 42.5%;
+    font-size: xx-large;
+}
+
+#icons li a {
+    transition: 0.5s;
+}
+
+#icons li a:hover {
+    text-decoration: none;
+    color: #e46f80;
+}
+
+
 .header-text {
-    padding-top: 17.5%;
-    font-size: 60px;
+    padding-top: 22.5%;
     margin-left: 16.5%;
 }
 
-.header-text p span {
+.header-text p {
     font-size: 80px;
     margin-top: 5px;
-    color: #e46f80;
 }
 
 
