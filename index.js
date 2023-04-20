@@ -28,9 +28,12 @@ Krish Nalam`;
 
 const splitted = x.split('<nl>');
 
-splitted.forEach(function () {
+splitted.forEach(function (text, index) {
   const p = document.createElement('p');
   output.appendChild(p);
+  if (index === 1) {
+    p.className = 'nameColor';
+  }
 });
 const paras = output.querySelectorAll('p');
 

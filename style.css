@@ -1,23 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    height: 100vh !important;
-    width: 100vw !important;
 }
 
 body {
-    background: #080808;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    height: 100vh !important;
-    width: 100vw !important;
+    background: #102937;
+    color: #ededed;
 }
 
 .home {
@@ -25,8 +18,8 @@ body {
     background-size: cover;
     background-position: right;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100%;
+    min-height: 90vh;
+    max-height: 90vh;
 }
 
 .container {
@@ -34,69 +27,90 @@ body {
 }
 
 .bar {
-    display: flex;
-    flex-direction: row;
-    width: 10vw;
-    height: 100vh;
-    background-color: #262626;
-    overflow: hidden;
-    min-width: 190px;
+    width: 100%;
+    height: 10vh;
+    background-color: #102937;
 }
-
-.whole {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    height: 100vh;
-    position: relative;
-    overflow: auto;
-}
-
 
 .logo {
-    width: 190px;
-    height: 190px;
-    box-shadow: 0px 10px 10px #080808;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 10px 10px #102937;
+}
+
+.nameColor {
+    color: #66FCF1;
+}
+
+nav {
+    margin-bottom: 98vh;
+    position: relative;
+    box-shadow: 0px 4vh 17.5px #102937;
+}
+
+nav ul {
+    margin-left: 65%;
+    margin-top: 0.7%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
     list-style: none;
-    margin-left: 35%;
-    margin-top: 40%;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ededed;
     text-decoration: none;
     font-size: 26px;
     position: relative;
 }
 
-nav span li a::after {
+nav li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #e46f80;
+    background: #39ff14;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-nav span ul li a:hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
+.iconer {
+    position: fixed;
+    margin-top: 15%;
+    padding-left: 10px;
+    width: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.5s;
+}
+
 #icons {
-    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #icons li {
     list-style: none;
-    margin-top: 15%;
-    margin-left: 42.5%;
     font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.iconer:hover {
+    width: 2.75%;
+    background-color: #fff;
+}
+
 
 #icons li a {
     transition: 0.5s;
@@ -104,12 +118,11 @@ nav span ul li a:hover::after {
 
 #icons li a:hover {
     text-decoration: none;
-    color: #e46f80;
+    color: #39ff14;
 }
 
-
 .header-text {
-    padding-top: 22.5%;
+    padding-top: 15%;
     margin-left: 16.5%;
 }
 
@@ -122,7 +135,7 @@ nav span ul li a:hover::after {
 /*--------------about----------------*/
 #about {
     padding: 80px 0;
-    color: #ababaa;
+    color: #ededed;
 }
 
 .row {
@@ -147,7 +160,7 @@ nav span ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #ededed;
 }
 
 .field {
@@ -167,7 +180,7 @@ nav span ul li a:hover::after {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: #fff;
+    color: #ededed;
     margin-top: 20px;
 }
 
@@ -175,7 +188,7 @@ nav span ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #e46f80;
+    background: #66FCF1;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -193,7 +206,7 @@ nav span ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #e9cad0;
+    color: #45a29e;
     font-size: 20px;
 }
 
@@ -218,7 +231,7 @@ nav span ul li a:hover::after {
 }
 
 .services-list div {
-    background: #262626;
+    background: #1F2833;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -239,14 +252,14 @@ nav span ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: #fff;
+    color: #ededed;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    background: #e46f80;
+    background: #66FCF1;
     transform: translateY(-10px);
 }
 
@@ -271,7 +284,7 @@ nav span ul li a:hover::after {
 
 .work img {
     width: 100%;
-    border-radius: 10px;
+    height: 300px;
     display: block;
     transition: transform 0.5s;
 }
@@ -279,7 +292,7 @@ nav span ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), #e46f80);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), #66FCF1);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -298,16 +311,16 @@ nav span ul li a:hover::after {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    color: #080808;
+    color: #102937;
 }
 
 .layer a {
     margin-top: 20px;
-    color: #e46f80;
+    color: #66FCF1;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #ededed;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -326,67 +339,45 @@ nav span ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #e46f80;
+    border: 1px solid #66FCF1;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #ededed;
     transition: background-color 0.5;
 }
 
 .btn:hover {
-    background: #e46f80;
+    background: #66FCF1;
 }
 
+/*----------------design-------*/
 
-
-/*--------------------css for small screen ------------*/
-nav .fa-solid {
-    display: none;
+.design {
+    background-color: #080808;
+    display: flex;
+    flex-direction: row;
 }
 
-@media only screen and (max-width: 600px) {
+#icons2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+#icons2 li {
+    list-style: none;
+    color: #fff;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+}
 
-    #header {
-        background-image: url(images/Mobile-Background.png);
-    }
+#icons2 li a {
+    transition: 0.5s;
+}
 
-    .header-text {
-        margin-top: 100%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fa-solid {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #e46f80;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-solid {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+#icons2 li a:hover {
+    text-decoration: none;
+    color: #39ff14;
 }
