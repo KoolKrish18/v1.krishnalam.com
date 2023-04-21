@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background: #102937;
-    color: #ededed;
+    background: #293242;
+    color: #9da2ae;
 }
 
 .home {
@@ -29,31 +29,49 @@ body {
 .bar {
     width: 100%;
     height: 10vh;
-    background-color: #102937;
+    background-color: #293242;
 }
 
 .logo {
-    width: 0px;
+    margin-top: 5px;
+    width: 80px;
     height: 0px;
-    box-shadow: 0px 10px 10px #102937;
 }
 
 .nameColor {
-    color: #66FCF1;
+    color: #916848;
+}
+
+.btn2 {
+    display: block;
+    width: fit-content;
+    border: 1px solid #916848;
+    padding: 7.5px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #9da2ae;
+    font-size: 20px;
+    font-weight: 537;
+    transition: 0.5s;
+    margin-top: 0%;
+}
+
+.btn2:hover {
+    background: #916848;
 }
 
 nav {
-    margin-bottom: 98vh;
     position: relative;
-    box-shadow: 0px 4vh 17.5px #102937;
+    box-shadow: 0px 3.5vh 17.5px #293242;
 }
 
 nav ul {
-    margin-left: 65%;
-    margin-top: 0.7%;
+    margin-left: 57.5%;
+    margin-top: 0.5%;
     margin-right: 5%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 nav ul li {
@@ -61,7 +79,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ededed;
+    color: #9da2ae;
     text-decoration: none;
     font-size: 26px;
     position: relative;
@@ -71,7 +89,7 @@ nav li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #39ff14;
+    background: #916848;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -86,38 +104,40 @@ nav ul li a:hover::after {
     position: fixed;
     margin-top: 15%;
     padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transform: translateX(-80%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: 0.5s;
-    background-color: #fff;
+    background-color: #916848;
 }
 
-#icons {
+.icons {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#icons li {
+.icons li {
     list-style: none;
     font-size: xx-large;
     display: flex;
     flex-direction: column;
-
 }
 
 .iconer:hover {
     transform: translateX(0%);
 }
 
-#icons li a {
+.icons li a {
     transition: 0.5s;
+    color: #293242;
 }
 
-#icons li a:hover {
-    text-decoration: none;
-    color: #39ff14;
+.icons li a:hover {
+    color: #b3a188;
 }
 
 .header-text {
@@ -134,7 +154,7 @@ nav ul li a:hover::after {
 /*--------------about----------------*/
 #about {
     padding: 80px 0;
-    color: #ededed;
+    color: #b3a188;
 }
 
 .row {
@@ -159,12 +179,13 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #ededed;
+    color: #b3a188;
 }
 
 .field {
     font-size: 20px;
     max-width: 90%;
+    color: #9da2ae;
 }
 
 .tab-titles {
@@ -179,7 +200,7 @@ nav ul li a:hover::after {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    color: #ededed;
+    color: #b3a188;
     margin-top: 20px;
 }
 
@@ -187,7 +208,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #66FCF1;
+    background: #916848;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -205,7 +226,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #45a29e;
+    color: #a4a3a1;
     font-size: 20px;
 }
 
@@ -251,14 +272,14 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: #ededed;
-    font-size: 12px;
+    color: #1F2833;
+    font-size: 26px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    background: #66FCF1;
+    background: #916848;
     transform: translateY(-10px);
 }
 
@@ -283,7 +304,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
-    height: 300px;
+    height: auto;
     display: block;
     transition: transform 0.5s;
 }
@@ -291,7 +312,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(255, 255, 255, 0.6), #66FCF1);
+    background: linear-gradient(rgba(255, 255, 255, 0.7), #b3a188);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -303,23 +324,25 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #916848;
     transition: height 0.5s;
 }
 
 .layer h3 {
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 20px;
-    color: #102937;
+    color: #293242;
 }
 
 .layer a {
     margin-top: 20px;
-    color: #66FCF1;
+    color: #916848;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #ededed;
+    background: #293242;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -338,16 +361,18 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #66FCF1;
+    border: 1px solid #916848;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #ededed;
+    color: #9da2ae;
+    font-weight: 600;
+    font-size: 20px;
     transition: background-color 0.5s;
 }
 
 .btn:hover {
-    background: #66FCF1;
+    background: #916848;
 }
 
 /*--------------design---*/
@@ -368,22 +393,6 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-
-.btn2 {
-    display: block;
-    width: fit-content;
-    border: 1px solid #66FCF1;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #ededed;
-    transition: 0.5s;
-}
-
-.btn2:hover {
-    background: #66FCF1;
 }
 
 
