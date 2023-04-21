@@ -444,3 +444,25 @@ nav ul li a:hover::after {
     justify-content: space-between;
     padding: 10px 10px;
 }
+
+.splash {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 101%;
+    width: 101%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 50, 66);
+    transition: all ease-in-out 600ms;
+}
+
+.hidden {
+    transition: 0.5s;
+    display: none;
+}
+
+.logo3 {
+    margin-top: 40vh;
+    margin-left: 42.5vw;
+}
