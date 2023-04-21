@@ -16,7 +16,7 @@ splashScreen.addEventListener("click", () => {
     splashScreen.style.opacity = 0;
     setTimeout(() => {
         splashScreen.classList.add("hidden");
-    }, 610);
+    }, 6100);
 
     const output = document.getElementById("txt");
     let i = 0;
