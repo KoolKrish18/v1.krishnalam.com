@@ -49,8 +49,8 @@ body {
 
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: auto;
+    height: 9.6vh;
     margin-left: 1.5em;
     margin-top: 10px;
 }
